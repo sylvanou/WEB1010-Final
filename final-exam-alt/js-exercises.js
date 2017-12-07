@@ -1,30 +1,30 @@
 //Question 1.1
 //Find the error in the following for loop:
 
-for (var i = 0; i < '5'; i++;) {
- console.log('i')
+for (var i = 0; i < 5; i++) {
+ console.log(i)
 }
 
 //Question 1.2
 //Find the error in the following conditional:
- if false{
-   consola.log("hello")
+ if (false) {
+   console.log("hello")
  }else{
    console.log("hasta luego")
  }
 
 //Question 1.3
 //Find the error in the following code:
-var x = 15;
+var x = 15
 if (x > 10){
-   console.log(x is greater than ten);
+   console.log(x + " is greater than ten")
 }
 
 //Question 1.4
 //Find the error in the following code:
-var y = 27;
-if y === 27
-  console.log(27);
+var y = 27
+if (y === 27)
+  console.log(27)
 
 //Question 2.1
 //What will the console output when the following is entered.
@@ -33,13 +33,15 @@ if y === 27
 //a. 2
 //b. "2"
 //c. "11"
-//d. 11
+// Answer: d. 11
 
 //Question 2.2
 //Find the errors in the following
 var name = "Roberto"
-var time =3
+var time = 3
 //name"+ said "He's comming late.", The meeting is still at " + time +
+//Answer:
+console.log(name + " said \"He's coming late.\" The meeting is still at " + time)
 
 //Question 2.3
 //What is the value of x?
@@ -48,6 +50,7 @@ var a = "thug life"
 var b = 5;
 var c = 10;
 var x = b*c + a;
+//Answer: 50thug life
 
 //Question 2.4
 //What is the value of x?
@@ -56,20 +59,23 @@ var y = 6;
 x = x*y;
 var z = 4;
 x = x*z;
-
+//Answer: The value of x is 240
 
 //Question 3.1
 //Write a sentence that uses the following variables
 var firstName = "John"
 var lastName = "Martinez"
 var city = "Miami"
+//Answer:
+console.log(`${firstName} ${lastName} is from ${city}.`)
 
 
 //Question 3.2
 //Write a sentence that uses the following variables
 totalPower = 32
 generator = 1
-
+//Answer:
+console.log(`Generator ${generator} has a total power of ${totalPower}.`)
 
 //Question 3.3
 //What is the value of str3?
@@ -77,12 +83,15 @@ generator = 1
 var str1 = "que bola acere";
 var str2 = "sup dawg";
 var str3 = str1+"is similar to"+str2+" in spanish.";
-
+// Answer: que bola acereis similar tosup dawg in spanish. 
+//Note: There were some missing spaces in the strings
 
 //Question 3.4
 //Use console.log to output the statement: "Hi! My name is Slim Shady." using the following two variables:
 var greeting = "Hi!";
 var name = "Slim Shady";
+//Answer:
+console.log(`${greeting} My name is ${name}.`)
 
 
 //Question 4
@@ -105,6 +114,11 @@ Dadas tres variables, money, interest, and years, escriba un programa que muestr
 var money = 1000;
 var interest = 0.05;
 var years = 30;
+//Answer:
+for(var i = 1; i <= 30; i++){
+  money = money + (money * interest)
+  console.log(`At the end of year ${i}, you have $${money}`)
+}
 
 
 
@@ -117,8 +131,8 @@ Given three variables, create a program that outputs (to the console) "You shoul
 var carAge = 10;
 var mileage = 150000;
 var brand = "Kia";
-
-if (         ){
+//Answer:
+if (carAge > 10 && mileage > 1500000 && brand == "Kia"){
   console.log("You should buy a new car");
 }
 else{
@@ -142,27 +156,22 @@ var currentPool = 1
 var smallVolume = 1000
 var largeVolume = 3000
 var totalVolume = 0
-for (; ; ) {
-
-
+//Answer:
+for (var i = currentPool; i <= totalPools; i++) {
+    if (i <= 7){
+      totalVolume += smallVolume
+    }
+    else {
+      totalVolume += largeVolume
+    }
 }
+console.log(`${totalVolume} gallons are used per day to fill the pools.`)
 
 
 // Extra Credit
 // Este dia las picsinas numero 2 y 10 no trabajan,
 // Repeat the same problem but assume pools 2 and 10 aren't operational.
-var totalPools = 12
-var currentPool = 1
-var smallVolume = 1000
-var largeVolume = 3000
-var totalVolume = 0
-for ( ;   ;  ) {
 
-
-
-
-
-}
 
 
 
